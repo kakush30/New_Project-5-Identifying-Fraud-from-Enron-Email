@@ -35,7 +35,7 @@ sS'_fit_method'
 p15
 NsS'weights'
 p16
-S'distance'
+S'uniform'
 p17
 sS'_tree'
 p18
