@@ -3,7 +3,7 @@ import csv
 import matplotlib.pyplot as plt
 import pickle
 import sys
-sys.path.append("tools/")
+sys.path.append("../tools/")
 
 from feature_format import featureFormat
 from feature_format import targetFeatureSplit
@@ -14,6 +14,8 @@ def remove_outliers(dict_object, keys):
     """ removes a list of keys from a dict object """
     for key in keys:
         dict_object.pop(key, 0)
+        
+
 
 def make_csv(data_dict):
     """ generates a csv file from a data set """

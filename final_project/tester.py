@@ -13,7 +13,7 @@
 import pickle
 import sys
 from sklearn.cross_validation import StratifiedShuffleSplit
-sys.path.append("tools/")
+sys.path.append("../tools/")
 from feature_format import featureFormat, targetFeatureSplit
 
 PERF_FORMAT_STRING = "\
@@ -76,6 +76,8 @@ def test_classifier(clf, dataset, feature_list, folds = 1000):
 CLF_PICKLE_FILENAME = "my_classifier.pkl"
 DATASET_PICKLE_FILENAME = "my_dataset.pkl"
 FEATURE_LIST_FILENAME = "my_feature_list.pkl"
+
+
 
 def dump_classifier_and_data(clf, dataset, feature_list):
     pickle.dump(clf, open(CLF_PICKLE_FILENAME, "w") )
